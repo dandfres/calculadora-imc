@@ -14,7 +14,9 @@ if (imc < 18.5) {
 } else if (imc >= 25 && imc < 29.9) {
     result.innerText = `Tú IMC es: ${imc.toFixed(2)} y tienes sobrepeso !!`;
     imgDOM.src = "images/overweight.png";
-} else {
+} else if (imc >= 30 && imc < 34.9) {
     result.innerText = `Tú IMC es: ${imc.toFixed(2)}, ESTÁS OBESO !!`;
     imgDOM.src = "images/obese.png";
+} else {
+    result.innerText = `Peso o altura no válidos`;
 }
